@@ -2,25 +2,25 @@
 
 # Leer entradas del usuario
 echo "IP Address:"
-read ip
+read -e ip
 
 echo "Netmask (CIDR, e.g., /24):"
-read netmask
+read -e netmask
 
 echo "Gateway:"
-read gateway
+read -e gateway
 
 echo "DNS (comma separated):"
-read dns
+read -e dns
 
 echo "Domain (comma separated):"
-read domain
+read -e domain
 
 echo "Hostname:"
-read hostname
+read -e hostname
 
 echo "Interface"
-read interface
+read -e interface
 
 # Asignar el hostname
 echo "$hostname" > /etc/hostname
